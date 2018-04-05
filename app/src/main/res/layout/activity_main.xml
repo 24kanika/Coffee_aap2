@@ -1,0 +1,202 @@
+<RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/artboard"
+    android:scaleType="centerCrop"
+    android:foreground="@color/blackish"
+
+
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COFFEE BLOOM"
+        android:textSize="@dimen/heading_text_size"
+        android:textColor="@color/cream1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:textStyle="bold"
+       android:fontFamily="serif-monospace"
+        android:id="@+id/shop_name"
+        android:elevation="16dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Name"
+android:layout_below="@id/shop_name"
+        android:textSize="20dp"
+        android:layout_marginLeft="@dimen/default_margin_left"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_white"
+        android:paddingLeft="16dp"
+        android:id="@+id/name"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone"
+        android:textSize="20dp"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="@dimen/default_margin_left"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/rounded_white"
+        android:paddingLeft="16dp"
+        android:id="@+id/number"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/default_margin_left"
+        android:layout_marginRight="@dimen/default_margin_left"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/rounded_white"
+        android:hint="Table No:"
+        android:paddingLeft="16dp"
+        android:textSize="20dp" />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:padding="18dp"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_white"
+        android:textColor="@color/white"
+        android:id="@+id/spinner"
+        android:entries="@array/Menu"
+        android:layout_marginBottom="15dp"
+
+
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/spinner"
+        android:id="@+id/sugar_container"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUGAR"
+        android:textStyle="bold"
+
+        android:textSize="22dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/sugar"
+        android:textColor="@color/cream1"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/sugar"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/sugar_container"
+        android:layout_width="wrap_content"
+        android:id="@+id/count"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/trans_white_rectangle"
+        android:padding="8dp"
+      android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of Cups"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:textColor="@color/cream1"
+            android:id="@+id/cups"
+            android:layout_marginRight="24dp"
+
+            />
+    <Button
+        android:layout_width="@dimen/circle_button"
+        android:layout_height="@dimen/circle_button"
+        android:text="-"
+        android:layout_below="@+id/cups"
+        android:textSize="20dp"
+
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_white"
+        android:layout_marginRight="10dp"
+
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="@color/cream"
+            android:textSize="30dp"
+
+            />
+
+    <Button
+        android:layout_width="@dimen/circle_button"
+        android:layout_height="@dimen/circle_button"
+        android:background="@drawable/rounded_white"
+        android:text="+"
+        android:textSize="20dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginLeft="10dp"
+
+
+        />
+
+    </LinearLayout>
+    <Button
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/count"
+        android:layout_centerHorizontal="true"
+        android:text="Total Amount"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/cream1"
+        android:background="@drawable/trans_white_rectangle"
+
+        android:textSize="20dp"
+        android:id="@+id/amount"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:background="@color/orange"
+        android:text="Place your Order"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Coffee_aap</string>
+    <string name="phone">Phone no:</string>
+
+    <string-array name="Menu">
+        <item>SELECT YOUR COFFEE</item>
+        <item>Black Coffee</item>
+        <item>Hot Coffee</item>
+        <item>Cold Coffee</item>
+        <item>Cappuccino Coffee</item>
+        <item>Cold Coffee ice </item>
+    </string-array>
+
+
+</resources>
